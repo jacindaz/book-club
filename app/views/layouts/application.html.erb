@@ -2,13 +2,32 @@
 <html>
 <head>
   <title>BookClub</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
+<div class="row">
+  <div class="col-md-5" style="float:left;">
+    <h2>Such Wow. Many Reading.</h2>
+  </div>
+  <div class="col-md-6" style="float:right;text-align:right;">
+    <h4><%= link_to "Submit a Book", new_book_path %></h4>
+    <h4><%= link_to "View All Books", books_path %></h4>
+  </div>
+</div>
+
+<hr>
+
 <%= yield %>
+
+<br>
+<div class="footer navbar-fixed-bottom">
+  <center>
+    <p style="color:#713D9C;font-weight: 800;">Created by Jacinda Zhong | Launch Academy Week 8 Systems Check | July 2014</p>
+  </center>
+</div>
 
 </body>
 </html>

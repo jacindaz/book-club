@@ -2,7 +2,11 @@
 
 <ul>
   <% @books.each do |book| %>
-  <li><h4><%= book.title %> (<%= book.year %>)</h4>
+  <li>
+    <h4>
+      <%= link_to book.title, book_path(book) %>
+      (<%= book.year %>)
+    </h4>
       <i>By <%= book.author %></i>
   </li>
   <% end %>

@@ -1,0 +1,12 @@
+<h2>Submit a New Book</h2>
+
+<%= simple_form_for(@book) do |f| %>
+
+  <%= f.input :title %>
+  <%= f.input :author %>
+  <%= f.input :year %>
+  <%= f.input :description %>
+  <%= f.input :category %>
+  <%= f.button :submit, "Submit New Book" %>
+
+<% end %>

@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby "2.1.1"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
@@ -28,7 +28,7 @@ gem 'simple_form'
 # gem 'bootstrap-sass'
 
 group :development, :test do
-  gem 'rspec-rails'
+  gem 'rspec-rails, '~> 2.0''
   gem 'capybara'
   gem 'factory_girl_rails'
   gem 'pry-rails'

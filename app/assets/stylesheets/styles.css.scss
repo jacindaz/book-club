@@ -1,0 +1,15 @@
+//Variables
+$header-font: "shortstackregular", Monaco, Consolas, "Lucida Console", monospace;
+
+
+body {
+  margin: 2% 15%;
+}
+h1, h2, h3, h4, h5 {
+  font-family: $header-font;
+}
+.footer {
+  font-family: $header-font;
+  color:#713D9C;
+  font-weight: 800;
+}

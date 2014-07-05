@@ -20,7 +20,7 @@ class BooksController < ApplicationController
       redirect_to book_path(@book)
     else
       flash.now[:book_error] = "Oops. Book not saved."
-      render :'books/new'
+      render :'new'
     end
 
   end

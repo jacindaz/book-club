@@ -16,7 +16,7 @@ class BooksController < ApplicationController
     @book = Book.new(books_params)
 
     if @book.save
-      flash.keep[:book_success] = "Book saved."
+      flash[:book_success] = "Book saved."
       redirect_to book_path(@book)
     else
       flash.now[:book_error] = "Oops. Book not saved."

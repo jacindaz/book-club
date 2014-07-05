@@ -6,11 +6,16 @@ FactoryGirl.define do
   end
 
   factory :book do
-    sequence(:title) {|n| "book title #{n}"}
-    author "Book author"
-    sequence(:year) {|n| n + 1 }
-    description "sample description"
-    category "Fiction"
+    title "book title"
+    author "book author"
+    year 2014
+    description "book description"
+    category "book category"
+    # sequence(:title) {|n| "book title #{n}"}
+    # author "Book author"
+    # sequence(:year) {|n| n + 1 }
+    # description "sample description"
+    # category "Fiction"
   end
 
   factory :review do

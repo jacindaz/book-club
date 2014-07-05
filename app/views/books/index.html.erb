@@ -1,0 +1,9 @@
+<h2>View all Books</h2>
+
+<ul>
+  <% @books.each do |book| %>
+  <li><h4><%= book.title %> (<%= book.year %>)</h4>
+      <i>By <%= book.author %></i>
+  </li>
+  <% end %>
+</ul>

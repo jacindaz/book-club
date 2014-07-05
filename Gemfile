@@ -28,7 +28,7 @@ gem 'simple_form'
 # gem 'bootstrap-sass'
 
 group :development, :test do
-  gem 'rspec-rails, '~> 2.0''
+  gem 'rspec-rails', '~> 2.0'
   gem 'capybara'
   gem 'factory_girl_rails'
   gem 'pry-rails'

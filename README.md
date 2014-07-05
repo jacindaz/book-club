@@ -4,4 +4,4 @@ Create a Rails application that allows users to store a list of books and review
 
 # Entity Relationship Diagram
 
-![Book Club ER Diagram](/book-club-er-diagram.jpg)
+![Book Club ER Diagram](/book-club-er-diagram.JPG)

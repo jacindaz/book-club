@@ -13,3 +13,9 @@
 
 <p><%= @book.description %></p>
 
+<h3>Reviews for <%= @book.title %></h3>
+<% if @reviews.empty? %>
+  <p>There are currently no reviews.</p>
+<% else %>
+
+<% end %>

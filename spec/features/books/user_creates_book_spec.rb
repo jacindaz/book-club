@@ -42,6 +42,8 @@ feature 'user creates a new book' do
     fill_in "Year", with: book.year
     click_button "Submit New Book"
 
+    click_on "Review this Book"
+
     fill_in "Title", with: book.title
     fill_in "Author", with: book.author
     fill_in "Year", with: book.year

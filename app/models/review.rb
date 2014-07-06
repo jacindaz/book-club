@@ -1,6 +1,6 @@
 class Review < ActiveRecord::Base
   validates :rating, presence: true, inclusion: { within: 1..5 }
-  validates :body, presence: true, length: {
+  validates :body, presence: true, uniqueness: true, length: {
     minimum: 2,
     maximum: 300,
     tokenizer: lambda { |str| str.scan(/\w+/) },

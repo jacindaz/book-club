@@ -5,10 +5,15 @@ FactoryGirl.define do
     @ratings_array[n]
   end
 
+  sequence(:random_year) do |n|
+    @year_array = (1800..2014).to_a.shuffle
+    @year_array[n]
+  end
+
   factory :book do
     sequence(:title) {|n| "book title #{n}"}
     author "Book author"
-    sequence(:year) {|n| n + 1 }
+    year { generate(:random_year)}
     description "sample description"
     category "Fiction"
   end

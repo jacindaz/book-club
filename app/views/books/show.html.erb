@@ -7,15 +7,28 @@
   <hr>
 <% end %>
 
-<h3>About <%= @book.title %> (<%= @book.year %>)</h3>
-
-<h4><i>By <%= @book.author %></i></h4>
-
-<p><%= @book.description %></p>
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3>About <%= @book.title %> (<%= @book.year %>)</h3>
+  </div>
+  <div class="panel-body">
+    <h4><i>By <%= @book.author %></i></h4>
+    <p><%= @book.description %></p>
+  </div>
+</div>
 
 <h3>Reviews for <%= @book.title %></h3>
 <% if @reviews.empty? %>
   <p>There are currently no reviews.</p>
 <% else %>
-
+  <ul>
+    <% @reviews.each do |review| %>
+      <li>
+        (<%= review.rating %>)
+        <%= review.body %>
+      </li>
+    <% end %>
+  </ul>
 <% end %>
+
+<h3><%= link_to "Review this Book", new_book_review_path(@book) %></h3>

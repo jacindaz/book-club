@@ -1,7 +1,7 @@
 FactoryGirl.define do
 
   sequence(:random_ranking) do |n|
-    @ratings_array = (1..5).to_a_.shuffle
+    @ratings_array = (1..5).to_a.shuffle
     @ratings_array[n]
   end
 

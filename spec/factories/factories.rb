@@ -12,7 +12,7 @@ FactoryGirl.define do
 
   factory :book do
     sequence(:title) {|n| "book title #{n}"}
-    author "Book author"
+    sequence(:author) {|n| "book author #{n}"}
     year { generate(:random_year)}
     description "sample description"
     category "Fiction"

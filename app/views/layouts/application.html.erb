@@ -20,6 +20,12 @@
 
 <hr>
 
+<% if flash.present? %>
+  <h3 style="color: purple;">
+    <%= flash[:notice] %>
+  </h3>
+<% end %>
+
 <%= yield %>
 
 <br>

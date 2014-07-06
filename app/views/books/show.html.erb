@@ -1,6 +1,9 @@
 <% if flash.present? %>
-  <% if flash[:book_success].present? %>
-    <h3 style="color: purple;"><%= flash[:book_success] %></h3>
+  <% if flash[:book_success].present? || flash[:notice].present? %>
+    <h3 style="color: purple;">
+      <%= flash[:book_success] %>
+      <%= flash[:notice] %>
+    </h3>
   <% elsif flash[:book_error].present? %>
      <h3 style="color: red;"><%= flash[:book_error] %></h3>
   <% end %>
